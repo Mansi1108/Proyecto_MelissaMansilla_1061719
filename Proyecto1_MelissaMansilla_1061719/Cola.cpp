@@ -32,7 +32,7 @@ int Cola::pop() {
 	aux = headC; //auxiliar apunta al head.
 	num = aux->numero; //numero se lea asignara el valor del auxiliar.
 	headC = headC->siguiente; //el head se convierte en el siguiente.
-	delete(aux);
+	delete(aux);//¿Qué es lo que supuestamente está mal? em no aumenta cuando se repite mas de 3 veces ¿Qué no aumenta?
 	return num;
 
 }

@@ -46,13 +46,16 @@ bool Pila::buscarPila(int valor) //metodo que verifica si el numero ingresado es
 	Nodo *aux = new Nodo();
 	aux = head;
 	bool existe = false; //si llegase a recorrer toda la pila y esta se queda vacia, devolvera un false.
-	while (aux->siguiente != nullptr) //dejara de cumplirse hasta que el ultimo no apunte a nada.
+	while (aux != nullptr) //¿Te acordás cuando pusiste un return 10?aja va pues ese es un valor que no está dentro de tus números, puedes aprovecharte de eso para evaluar ciertas expresiones, como esta.
 	{
-		if (aux->numero == valor) //si el valor del nodo auxiliar en x posicion es igual al valor este existe, si no el auxiliar apunta al siguiente.
+		if (aux->numero == valor) //si el valor del nodo auxiliar en x posicion es igual al valor este existe, si no el auxiliar apunta al siguiente. ;-;
 		{
-			existe = true;
+			return true;
 		}
-		aux = aux->siguiente;
+		else 
+		{
+			aux = aux->siguiente;//que pdo?wait jaja im thinkingoki
+		}
 	}
 	return existe; //si llegase a recorrer toda la pila y esta se queda vacia, devolvera un false.
 

@@ -39,10 +39,10 @@ namespace Proyecto1MelissaMansilla1061719 {
 			}
 		}
 	private: System::Windows::Forms::GroupBox^  groupBox1;
-	private: System::Windows::Forms::ComboBox^  CBGasolina;
+
 	protected:
 
-	private: System::Windows::Forms::Label^  label1;
+
 	private: System::Windows::Forms::Label^  label9;
 	private: System::Windows::Forms::Label^  lblCentecima;
 	private: System::Windows::Forms::Label^  lblDecima;
@@ -91,8 +91,6 @@ namespace Proyecto1MelissaMansilla1061719 {
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->txtPrecio = (gcnew System::Windows::Forms::TextBox());
 			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->CBGasolina = (gcnew System::Windows::Forms::ComboBox());
-			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
 			this->LBCola = (gcnew System::Windows::Forms::ListBox());
 			this->LBPila = (gcnew System::Windows::Forms::ListBox());
@@ -119,8 +117,6 @@ namespace Proyecto1MelissaMansilla1061719 {
 			this->groupBox1->Controls->Add(this->label4);
 			this->groupBox1->Controls->Add(this->txtPrecio);
 			this->groupBox1->Controls->Add(this->label2);
-			this->groupBox1->Controls->Add(this->CBGasolina);
-			this->groupBox1->Controls->Add(this->label1);
 			this->groupBox1->Location = System::Drawing::Point(434, 22);
 			this->groupBox1->Name = L"groupBox1";
 			this->groupBox1->Size = System::Drawing::Size(331, 272);
@@ -133,7 +129,7 @@ namespace Proyecto1MelissaMansilla1061719 {
 			this->label9->AutoSize = true;
 			this->label9->Font = (gcnew System::Drawing::Font(L"Montserrat Panda", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label9->Location = System::Drawing::Point(79, 228);
+			this->label9->Location = System::Drawing::Point(78, 207);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(40, 29);
 			this->label9->TabIndex = 18;
@@ -144,7 +140,7 @@ namespace Proyecto1MelissaMansilla1061719 {
 			this->lblCentecima->AutoSize = true;
 			this->lblCentecima->Font = (gcnew System::Drawing::Font(L"Montserrat Panda", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblCentecima->Location = System::Drawing::Point(221, 228);
+			this->lblCentecima->Location = System::Drawing::Point(220, 207);
 			this->lblCentecima->Name = L"lblCentecima";
 			this->lblCentecima->Size = System::Drawing::Size(30, 29);
 			this->lblCentecima->TabIndex = 18;
@@ -155,7 +151,7 @@ namespace Proyecto1MelissaMansilla1061719 {
 			this->lblDecima->AutoSize = true;
 			this->lblDecima->Font = (gcnew System::Drawing::Font(L"Montserrat Panda", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblDecima->Location = System::Drawing::Point(196, 228);
+			this->lblDecima->Location = System::Drawing::Point(195, 207);
 			this->lblDecima->Name = L"lblDecima";
 			this->lblDecima->Size = System::Drawing::Size(30, 29);
 			this->lblDecima->TabIndex = 17;
@@ -166,7 +162,7 @@ namespace Proyecto1MelissaMansilla1061719 {
 			this->label6->AutoSize = true;
 			this->label6->Font = (gcnew System::Drawing::Font(L"Montserrat Panda", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label6->Location = System::Drawing::Point(183, 228);
+			this->label6->Location = System::Drawing::Point(182, 207);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(20, 29);
 			this->label6->TabIndex = 16;
@@ -177,7 +173,7 @@ namespace Proyecto1MelissaMansilla1061719 {
 			this->lblUnidad->AutoSize = true;
 			this->lblUnidad->Font = (gcnew System::Drawing::Font(L"Montserrat Panda", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblUnidad->Location = System::Drawing::Point(152, 228);
+			this->lblUnidad->Location = System::Drawing::Point(151, 207);
 			this->lblUnidad->Name = L"lblUnidad";
 			this->lblUnidad->Size = System::Drawing::Size(30, 29);
 			this->lblUnidad->TabIndex = 15;
@@ -185,7 +181,7 @@ namespace Proyecto1MelissaMansilla1061719 {
 			// 
 			// brnEliminar
 			// 
-			this->brnEliminar->Location = System::Drawing::Point(60, 129);
+			this->brnEliminar->Location = System::Drawing::Point(59, 108);
 			this->brnEliminar->Name = L"brnEliminar";
 			this->brnEliminar->Size = System::Drawing::Size(95, 32);
 			this->brnEliminar->TabIndex = 13;
@@ -194,7 +190,7 @@ namespace Proyecto1MelissaMansilla1061719 {
 			// 
 			// btnAgregar
 			// 
-			this->btnAgregar->Location = System::Drawing::Point(161, 129);
+			this->btnAgregar->Location = System::Drawing::Point(160, 108);
 			this->btnAgregar->Name = L"btnAgregar";
 			this->btnAgregar->Size = System::Drawing::Size(90, 32);
 			this->btnAgregar->TabIndex = 11;
@@ -207,7 +203,7 @@ namespace Proyecto1MelissaMansilla1061719 {
 			this->lblDecena->AutoSize = true;
 			this->lblDecena->Font = (gcnew System::Drawing::Font(L"Montserrat Panda", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblDecena->Location = System::Drawing::Point(125, 228);
+			this->lblDecena->Location = System::Drawing::Point(124, 207);
 			this->lblDecena->Name = L"lblDecena";
 			this->lblDecena->Size = System::Drawing::Size(30, 29);
 			this->lblDecena->TabIndex = 6;
@@ -216,7 +212,7 @@ namespace Proyecto1MelissaMansilla1061719 {
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(95, 194);
+			this->label4->Location = System::Drawing::Point(94, 173);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(145, 20);
 			this->label4->TabIndex = 5;
@@ -224,7 +220,7 @@ namespace Proyecto1MelissaMansilla1061719 {
 			// 
 			// txtPrecio
 			// 
-			this->txtPrecio->Location = System::Drawing::Point(158, 74);
+			this->txtPrecio->Location = System::Drawing::Point(117, 48);
 			this->txtPrecio->Name = L"txtPrecio";
 			this->txtPrecio->Size = System::Drawing::Size(148, 26);
 			this->txtPrecio->TabIndex = 4;
@@ -232,29 +228,11 @@ namespace Proyecto1MelissaMansilla1061719 {
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(95, 80);
+			this->label2->Location = System::Drawing::Point(54, 54);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(57, 20);
 			this->label2->TabIndex = 2;
 			this->label2->Text = L"Precio:";
-			// 
-			// CBGasolina
-			// 
-			this->CBGasolina->FormattingEnabled = true;
-			this->CBGasolina->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Super", L"Diesel", L"Regular" });
-			this->CBGasolina->Location = System::Drawing::Point(158, 30);
-			this->CBGasolina->Name = L"CBGasolina";
-			this->CBGasolina->Size = System::Drawing::Size(148, 28);
-			this->CBGasolina->TabIndex = 1;
-			// 
-			// label1
-			// 
-			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(20, 38);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(132, 20);
-			this->label1->TabIndex = 0;
-			this->label1->Text = L"Tipo de Gasolina:";
 			// 
 			// groupBox2
 			// 
@@ -435,48 +413,52 @@ namespace Proyecto1MelissaMansilla1061719 {
 			{
 				aux->Apilar(a);
 				a = NPila->Desapilar();  
-				
 			}
 			while (aux->head != nullptr) //Hasta que la pila auxiliar este vacia esta saldra del while.
 			{
 				NPila->Apilar(aux->Desapilar()); //Se apilan los datos de la auxiliar en la pila original.
-
 			}
+			return a;
 		}
-		else if (NCola->buscarCola(n))
+		else if (NCola->buscarCola(n))//entonces todo esta bien no entiendo por que no lo muestra bien //loop?
 		{
 			Cola *aux = new Cola();
 			int b = NCola->pop();
 			while (b != n)
 			{
 				aux->push(b);
-				b = NCola->pop();
-				
+				b = NCola->pop();//Correlo, quiero ver  que onda 
 			}
 			while (aux->headC != nullptr)
 			{
 				NCola->push(aux->pop());
 			}
+			return b;
 		}
 		else
 		{
-			QuitarySacar(n + 1);
+			return QuitarySacar(n + 1); //mi numero
 		}
-		return n;
 	}
+
+	void ordenarP(Pila * NPila)
+	{
+
+	}
+
 private: System::Void btnAgregar_Click(System::Object^  sender, System::EventArgs^  e) {
 	System::String^ precio = txtPrecio->Text;
 	int num1 = System::Convert::ToInt32(precio->Substring(0, 1));
-	QuitarySacar(num1);
+	num1 = QuitarySacar(num1);
 	lblDecena->Text = System::Convert::ToString( num1);
 	int num2 = System::Convert::ToInt32(precio->Substring(1, 1));
-	QuitarySacar(num2);
+	num2 = QuitarySacar(num2);
 	lblUnidad->Text = System::Convert::ToString(num2);
 	int num3 = System::Convert::ToInt32(precio->Substring(3, 1));
-	QuitarySacar(num3);
+	num3 = QuitarySacar(num3);
 	lblDecima->Text = System::Convert::ToString(num3);
-	int num4 = System::Convert::ToInt32(precio->Substring(4, 1));
-	QuitarySacar(num4);
+	int num4 = System::Convert::ToInt32(precio->Substring(4, 1));//ok
+	num4 = QuitarySacar(num4);
 	lblCentecima->Text = System::Convert::ToString(num4);
 	RTRegistro->Text = RTRegistro->Text + "\n" + "Precio Ingresado:" + precio + "\n" + "Precio Aproximado:" + num1 + num2 + "." + num3 + num4;
 }
