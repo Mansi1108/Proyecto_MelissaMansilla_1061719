@@ -21,9 +21,6 @@ void Pila::Apilar(int valor) {
 	}
 	else 
 	{
-		/*NodoNuevo->N = FirstP;
-		FirstP = NewValue;
-		Cantidad++;*/
 		Nodo* Aux = new Nodo();
 		Aux = head; 
 		head = NodoNuevo; 

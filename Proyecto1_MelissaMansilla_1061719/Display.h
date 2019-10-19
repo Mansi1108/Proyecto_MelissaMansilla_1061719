@@ -39,8 +39,9 @@ namespace Proyecto1MelissaMansilla1061719 {
 			}
 		}
 	private: System::Windows::Forms::GroupBox^  groupBox1;
+	private: System::Windows::Forms::ComboBox^  CBGasolina;
 	protected:
-	private: System::Windows::Forms::ComboBox^  comboBox1;
+
 	private: System::Windows::Forms::Label^  label1;
 	private: System::Windows::Forms::Label^  label9;
 	private: System::Windows::Forms::Label^  lblCentecima;
@@ -90,7 +91,7 @@ namespace Proyecto1MelissaMansilla1061719 {
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->txtPrecio = (gcnew System::Windows::Forms::TextBox());
 			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
+			this->CBGasolina = (gcnew System::Windows::Forms::ComboBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
 			this->LBCola = (gcnew System::Windows::Forms::ListBox());
@@ -118,7 +119,7 @@ namespace Proyecto1MelissaMansilla1061719 {
 			this->groupBox1->Controls->Add(this->label4);
 			this->groupBox1->Controls->Add(this->txtPrecio);
 			this->groupBox1->Controls->Add(this->label2);
-			this->groupBox1->Controls->Add(this->comboBox1);
+			this->groupBox1->Controls->Add(this->CBGasolina);
 			this->groupBox1->Controls->Add(this->label1);
 			this->groupBox1->Location = System::Drawing::Point(434, 22);
 			this->groupBox1->Name = L"groupBox1";
@@ -237,14 +238,14 @@ namespace Proyecto1MelissaMansilla1061719 {
 			this->label2->TabIndex = 2;
 			this->label2->Text = L"Precio:";
 			// 
-			// comboBox1
+			// CBGasolina
 			// 
-			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Super", L"Diesel", L"Regular" });
-			this->comboBox1->Location = System::Drawing::Point(158, 30);
-			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(148, 28);
-			this->comboBox1->TabIndex = 1;
+			this->CBGasolina->FormattingEnabled = true;
+			this->CBGasolina->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"Super", L"Diesel", L"Regular" });
+			this->CBGasolina->Location = System::Drawing::Point(158, 30);
+			this->CBGasolina->Name = L"CBGasolina";
+			this->CBGasolina->Size = System::Drawing::Size(148, 28);
+			this->CBGasolina->TabIndex = 1;
 			// 
 			// label1
 			// 
@@ -388,7 +389,7 @@ namespace Proyecto1MelissaMansilla1061719 {
 	}
 	void MostrarPila()
 	{
-		int VP[10] = { 10,10,10,10,10,10,10,10,10,10 }; //Vector llenado con un mismo valor para 
+		int VP[10] = { 10,10,10,10,10,10,10,10,10,10 }; //Vector llenado con un mismo valor. 
 		int i = 0; // contador
 		Nodo *aux = new Nodo();
 		aux = NPila->head; // auxiliar apunta al head de la pila.
@@ -433,7 +434,7 @@ namespace Proyecto1MelissaMansilla1061719 {
 			while(a != n) 
 			{
 				aux->Apilar(a);
-				a = NPila->Desapilar(); // 
+				a = NPila->Desapilar();  
 				
 			}
 			while (aux->head != nullptr) //Hasta que la pila auxiliar este vacia esta saldra del while.
@@ -467,16 +468,17 @@ private: System::Void btnAgregar_Click(System::Object^  sender, System::EventArg
 	System::String^ precio = txtPrecio->Text;
 	int num1 = System::Convert::ToInt32(precio->Substring(0, 1));
 	QuitarySacar(num1);
+	lblDecena->Text = System::Convert::ToString( num1);
 	int num2 = System::Convert::ToInt32(precio->Substring(1, 1));
 	QuitarySacar(num2);
+	lblUnidad->Text = System::Convert::ToString(num2);
 	int num3 = System::Convert::ToInt32(precio->Substring(3, 1));
 	QuitarySacar(num3);
+	lblDecima->Text = System::Convert::ToString(num3);
 	int num4 = System::Convert::ToInt32(precio->Substring(4, 1));
 	QuitarySacar(num4);
-
-	//array<String^>^ arreglo = precio->Split('.');//Se hace un arreglo de strings,a
-
-
+	lblCentecima->Text = System::Convert::ToString(num4);
+	RTRegistro->Text = RTRegistro->Text + "\n" + "Precio Ingresado:" + precio + "\n" + "Precio Aproximado:" + num1 + num2 + "." + num3 + num4;
 }
 };
 }
