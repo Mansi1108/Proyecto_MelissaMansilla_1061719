@@ -1,0 +1,8 @@
+﻿  Cola.cpp
+  Display.cpp
+d:\mansilla\url\labsprogra\proyecto\proyecto1_melissamansilla_1061719\proyecto1_melissamansilla_1061719\display.h(430): error C2039: 'buscarpila': is not a member of 'Pila'
+  d:\mansilla\url\labsprogra\proyecto\proyecto1_melissamansilla_1061719\proyecto1_melissamansilla_1061719\pila.h(3): note: see declaration of 'Pila'
+  Lista.cpp
+  Nodo.cpp
+  Pila.cpp
+  Generating Code...
