@@ -47,10 +47,7 @@ bool Cola::buscarCola(int valor)
 		{
 			existe = true;
 		}
-		else
-		{
-			aux = aux->siguiente;
-		}
+		aux = aux->siguiente;
 	}
 	return existe;
 

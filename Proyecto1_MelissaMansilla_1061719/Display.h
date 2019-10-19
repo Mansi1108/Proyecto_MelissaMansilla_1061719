@@ -424,8 +424,56 @@ namespace Proyecto1MelissaMansilla1061719 {
 			i++;
 		}
 	}
+	int QuitarySacar(int n) //Se basa en un procedimiento en el cual ingresa el digito del precio, y estos entran a los metodos de verificacion si existen en la pila y la cola, cuando estos no se cumplan el valor en n se le agregara 1;
+	{
+		if (NPila->buscarPila(n))
+		{
+			Pila *aux = new Pila();
+			int a = NPila->Desapilar();
+			while(a != n) 
+			{
+				aux->Apilar(a);
+				a = NPila->Desapilar(); // 
+				
+			}
+			while (aux->head != nullptr) //Hasta que la pila auxiliar este vacia esta saldra del while.
+			{
+				NPila->Apilar(aux->Desapilar()); //Se apilan los datos de la auxiliar en la pila original.
+
+			}
+		}
+		else if (NCola->buscarCola(n))
+		{
+			Cola *aux = new Cola();
+			int b = NCola->pop();
+			while (b != n)
+			{
+				aux->push(b);
+				b = NCola->pop();
+				
+			}
+			while (aux->headC != nullptr)
+			{
+				NCola->push(aux->pop());
+			}
+		}
+		else
+		{
+			QuitarySacar(n + 1);
+		}
+		return n;
+	}
 private: System::Void btnAgregar_Click(System::Object^  sender, System::EventArgs^  e) {
 	System::String^ precio = txtPrecio->Text;
+	int num1 = System::Convert::ToInt32(precio->Substring(0, 1));
+	QuitarySacar(num1);
+	int num2 = System::Convert::ToInt32(precio->Substring(1, 1));
+	QuitarySacar(num2);
+	int num3 = System::Convert::ToInt32(precio->Substring(3, 1));
+	QuitarySacar(num3);
+	int num4 = System::Convert::ToInt32(precio->Substring(4, 1));
+	QuitarySacar(num4);
+
 	//array<String^>^ arreglo = precio->Split('.');//Se hace un arreglo de strings,a
 
 

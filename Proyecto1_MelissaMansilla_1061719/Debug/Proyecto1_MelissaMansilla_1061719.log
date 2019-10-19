@@ -1,8 +1,3 @@
-﻿  Cola.cpp
-  Display.cpp
-d:\mansilla\url\labsprogra\proyecto\proyecto1_melissamansilla_1061719\proyecto1_melissamansilla_1061719\display.h(430): error C2039: 'buscarpila': is not a member of 'Pila'
-  d:\mansilla\url\labsprogra\proyecto\proyecto1_melissamansilla_1061719\proyecto1_melissamansilla_1061719\pila.h(3): note: see declaration of 'Pila'
-  Lista.cpp
-  Nodo.cpp
-  Pila.cpp
-  Generating Code...
+﻿  Display.cpp
+  Cola.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  Proyecto1_MelissaMansilla_1061719.vcxproj -> D:\Mansilla\URL\LabsProgra\Proyecto\Proyecto1_MelissaMansilla_1061719\Debug\Proyecto1_MelissaMansilla_1061719.exe

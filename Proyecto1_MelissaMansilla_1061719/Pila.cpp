@@ -19,8 +19,11 @@ void Pila::Apilar(int valor) {
 	{
 		head = NodoNuevo; //el numero se convierte en el nuevo head.
 	}
-	else
+	else 
 	{
+		/*NodoNuevo->N = FirstP;
+		FirstP = NewValue;
+		Cantidad++;*/
 		Nodo* Aux = new Nodo();
 		Aux = head; 
 		head = NodoNuevo; 
@@ -52,10 +55,7 @@ bool Pila::buscarPila(int valor) //metodo que verifica si el numero ingresado es
 		{
 			existe = true;
 		}
-		else
-		{
-			aux = aux->siguiente;
-		}
+		aux = aux->siguiente;
 	}
 	return existe; //si llegase a recorrer toda la pila y esta se queda vacia, devolvera un false.
 
